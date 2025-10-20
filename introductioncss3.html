@@ -1,7 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head><title>  </title></head>
+  <head><title>Introduction To CSS 3</title></head>
   <body>
-    
+    <h1 style="text-align: center;">LESSON 4</h1>
+<p>&nbsp;</p>
+<h2 style="text-align: center;">&nbsp;-A CSS RULE</h2>
+<p>has two main parts: a selector, and one or more list of style declarations.</p>
+<p>Basic format of a CSS style rule is as follows:</p>
+<p>For Inline style rule: <br />&lt;tag style="style decoration"&gt;<br />&lt;tag style="prop1: valuel; prop2: value; prop3: value;&gt;</p>
+<p>For document-level and external style sheets:<br />selector {style declarations}<br />selector {prop1:value; prop2:value; prop3:value;}</p>
+<h2 style="text-align: center;">-STYLE PROPERTIES</h2>
+<p>Properties are collected into six groups:<br />1. Fonts<br />2. Colors and backgrounds<br />3. Text<br />4. Boxes and layout<br />5. Lists<br />6. Tag classifications</p>
+<p>&nbsp;</p>
+<h2 style="text-align: center;">-CLASSES<br /><br /></h2>
+<p style="text-align: left;">What are Classes?<br />Class &ndash; is a user-defined selector.<br />- used to apply a style rule to specific HTML tags<br />- can control individual HTML element<br />formatting<br />- is a reusable style definition that allows you to<br />apply the same set of formatting rules to<br />multiple HTML elements<br />Example: you can create a class only for the<br />paragraphs to which you have assigned the class.</p>
+<p style="text-align: left;">&nbsp;</p>
+<h2 style="text-align: center;">-CLASS SELECTOR</h2>
+<p>What are element+class selector (element.classname)?<br />&bull; A style applied to a particular set of elements.<br />&bull; More specific, it apply styles only if the element and<br />class match.</p>
+<p>Example:<br />p.note {color:blue; font-size:18px;}</p>
+<p>note=classname<br />p=element</p>
+<p>&nbsp;</p>
+<p>Why use Element + Class selectors?<br />Class selector (.classname)<br />&rarr; reusable across different elements.<br />Element + Class selector (p.classname)<br />&rarr; precise control over styling only one type of element.</p>
+<p>&nbsp;</p>
+<h2 style="text-align: center;">-GROUPING SELECTORS</h2>
+<p>You can group selectors and combine it in one CSS file. Each selector should be separated by a<br />comma.</p>
+<p>Sample code:</p>
+<p><strong>From:</strong></p>
+<ul>
+<ul>
+<li>
+<p>h1 {color: blue;}<br />p {color: blue;}<br />p{background-color: black;}</p>
+</li>
+</ul>
+</ul>
+<p><strong>To:</strong></p>
+<ul>
+<li>
+<p>h1,p {color: blue;}<br />p {background-color: black;}</p>
+</li>
+</ul>
   </body>
 </html>
