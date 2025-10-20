@@ -1,1 +1,52 @@
-
+<!DOCTYPE html>
+<html>
+<head><title>
+</title></head>
+<body>
+<h1 style="text-align: center;">LESSON 1</h1>
+<p>&nbsp;</p>
+<h2 style="text-align: center;">-What is CSS?</h2>
+<p style="text-align: left;">&bull; CSS stands for Cascading Style Sheets<br />&bull; CSS describes how HTML elements are to be<br />displayed on screen, paper, or in other media.<br />&bull; CSS saves a lot of work. It can control the layout of<br />multiple web pages all at once<br />&bull; External stylesheets are stored in CSS files.<br />&bull; CSS is the language we use to style a Web page.<br />&bull; CSS separates content from design, making websites<br />easier to maintain and more attractive.</p>
+<p style="text-align: left;">&nbsp;</p>
+<h2 style="text-align: center;">-Why use CSS?</h2>
+<p>&bull; CSS is used to define styles for your web pages,<br />including the design, layout and variations in<br />display for different devices and screen sizes.<br />&bull; Provides consistency across web pages.<br />&bull; Saves time: one CSS file can control multiple<br />pages.<br />&bull; Improves accessibility and responsiveness.<br />&bull; Enhances design with layout, colors, and<br />animations.</p>
+<p>&nbsp;</p>
+<h2 style="text-align: center;">-Layers Of The Webpage</h2>
+<p>3. Behavior Layer - The behavior layer is where you have a real-time user interaction with the web page. The interaction may be simple validation of input or filling out a form or even as big as web-based programs</p>
+<p><br />2. Presentation Layer - The presentation layer is where you can define how people see your web page in a browser</p>
+<p>1. Content Layer - Define and layout the text, images, animation, sound, ideo and everything you want to put in a web page with the use of tags</p>
+<p><br />Each layer of the webpage has<br />its specific use or function in<br />the web page. Each plays an<br />important role to be able to<br />attain the goal or objective of a<br />particular website.</p>
+<p>&nbsp;</p>
+<h2 style="text-align: center;">-Benefits of using CSS</h2>
+<ul>
+<li>CSS saves a lot of work - You do not have to code the CSS repeatedly intoan HTML file. You just need to write the CSS code once and then reuse the same stylesheet in multiple HTML pages. This saves coding time and space of your hard disk.</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>Easy maintenance - You can control the look and layout of several HTML pages at</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>Adding style to webpage makes it more pleasing to the eye - Improve the appearance of a website by allowing you to create a much more stylish website since CSS offers a wide array of expressive style capableness.</li>
+</ul>
+<p>&nbsp;</p>
+<h2 style="text-align: center;">-Capabilities of CSS</h2>
+<p>1. CSS makes your pages easily updateable. CSS makes it possible to update the layout of the entire page quickly. You can specify a style once and you can apply it as many times in your document.</p>
+<p>2. Position objects on the page. CSS gives you control when placing objects on the page exactly where you want them.</p>
+<p><br />3. Layer objects on the page. CSS allows you to position objects in three dimensions.</p>
+<p><br />4. Create custom tags. CSS allows you to create custom tags</p>
+<p>&nbsp;</p>
+<h2 style="text-align: center;">-Advantages of using CSS</h2>
+<p>&nbsp;</p>
+<p>1. Save typing and development time because you have to enter CSS code only once and it can be applied to many HTML scripts.</p>
+<p><br />2. Download faster because your browser will download only one file once.</p>
+<p>3. Faster page loading.</p>
+<p><br />4. You can also have multiple link tags in one document.</p>
+<p><br />5. Better design flexibility.</p>
+<p><br />6. Easier to maintain and update.</p>
+<p><br />7. Separation of structure (HTML) and style (CSS).</p>
+<p>&nbsp;</p>
+<h2 style="text-align: center;">-Prerequisites to learning CSS</h2>
+<p style="text-align: center;"><strong>You should have a basic knowledge and understanding of HTML or XHTML to cont</strong></p>
+</body>
+</html>
