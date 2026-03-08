@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Typography Demo</title>
+
+<style type="text/css">
+body{
+    font-family: Arial, sans-serif;
+    background:#eef2f7;
+    padding:40px;
+}
+
+/* section box */
+.section{
+    background:white;
+    border:1px solid #ccc;
+    padding:20px;
+    margin-bottom:30px;
+}
+
+/* demonstration text */
+.demo{
+    margin-top:10px;
+    font-size:24px;
+}
+
+/* font variant demo */
+.smallcaps{
+    font-variant: small-caps;
+}
+
+/* text shadow demo */
+.shadow{
+    text-shadow: 3px 3px 5px gray;
+}
+
+/* word wrap demo */
+.wrapbox{
+    width:300px;
+    border:1px dashed #888;
+    padding:10px;
+    overflow-wrap: break-word;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>CSS Typography Lesson</h1>
+<p>This page demonstrates how to use <b>font-variant</b>, <b>text-shadow</b>, and <b>word-wrap</b> in CSS.</p>
+
+<!-- FONT VARIANT -->
+<div class="section">
+<h2>1. Font Variant</h2>
+
+<p><b>font-variant</b> changes how letters appear. One common value is <b>small-caps</b>, which turns lowercase letters into smaller capital letters.</p>
+
+<p><b>Example:</b></p>
+
+<div class="demo smallcaps">
+The quick brown fox jumps over the lazy dog
+</div>
+
+</div>
+
+<!-- TEXT SHADOW -->
+<div class="section">
+<h2>2. Text Shadow</h2>
+
+<p><b>text-shadow</b> adds a shadow effect behind text.  
+It uses values like: horizontal offset, vertical offset, blur, and color.</p>
+
+<p><b>Example:</b></p>
+
+<div class="demo shadow">
+This text has a shadow effect
+</div>
+
+</div>
+
+<!-- WORD WRAP -->
+<div class="section">
+<h2>3. Word Wrap</h2>
+
+<p><b>overflow-wrap: break-word</b> forces very long words to wrap instead of overflowing outside the container.</p>
+
+<p><b>Example:</b></p>
+
+<div class="wrapbox">
+ThisIsAnExtremelyLongWordWithoutSpacesThatWouldNormallyOverflowButNowItWrapsInsideTheBox.
+</div>
+
+</div>
+
+</body>
+</html>
