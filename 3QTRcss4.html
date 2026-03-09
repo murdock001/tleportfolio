@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/* —— BORDER STYLES —— */
+
+/* Solid border with specific size and color */
+.border-example {
+  border-style: solid; /* sets border style first */
+  border-width: 5px;   /* thickness of the border */
+  border-color: blue;  /* color of the border */
+  padding: 15px;       /* spacing inside the border */
+  margin: 20px;        /* spacing outside the border */
+}
+
+/* Different border styles */
+.dashed-border {
+  border: 4px dashed red;
+  padding: 10px;
+  margin: 15px;
+}
+
+.double-border {
+  border: 6px double green;
+  padding: 10px;
+  margin: 15px;
+}
+
+/* —— PADDING EXAMPLES —— */
+
+/* Padding applied all around */
+.padding-all {
+  padding: 30px;
+  background-color: #f9f9b9;
+  margin: 15px;
+}
+
+/* Padding specific sides */
+.padding-sides {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  padding-right: 5px;
+  background-color: #d9f9d9;
+  margin: 15px;
+}
+
+/* —— TABLE STYLES —— */
+table {
+  border: 3px solid black; /* border around entire table */
+  border-collapse: collapse; /* makes cell borders joined */
+  width: 80%;
+  background-color: #eeeeee;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 2px solid gray; /* borders for table cells */
+  padding: 8px;           /* spacing inside cells */
+  text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>CSS Formatting: Borders, Padding, and Tables</h2>
+
+<!-- BORDER EXPLAINER -->
+<h3>Borders</h3>
+<p>Border size, color, and style help define how the edges of elements look.</p>
+
+<div class="border-example">
+This box has a 5px solid blue border with padding and margin.
+</div>
+
+<div class="dashed-border">
+This box has a dashed-style red border.
+</div>
+
+<div class="double-border">
+This box has a double green border.
+</div>
+
+<!-- PADDING EXPLAINER -->
+<h3>Padding</h3>
+<p>Padding controls the space between the border and the content.</p>
+
+<div class="padding-all">
+This box has equal padding on all sides.
+</div>
+
+<div class="padding-sides">
+This box has different padding on each side.
+</div>
+
+<!-- TABLE STYLES -->
+<h3>Table Styling</h3>
+<p>Tables can also be styled using borders, background color, and padding.</p>
+
+<table>
+  <tr>
+    <th>Item</th>
+    <th>Price</th>
+    <th>Stock</th>
+  </tr>
+  <tr>
+    <td>Notebook</td>
+    <td>$5</td>
+    <td>In Stock</td>
+  </tr>
+  <tr>
+    <td>Pencil</td>
+    <td>$1</td>
+    <td>Low Stock</td>
+  </tr>
+  <tr>
+    <td>Eraser</td>
+    <td>$2</td>
+    <td>Out of Stock</td>
+  </tr>
+</table>
+
+</body>
+</html>
