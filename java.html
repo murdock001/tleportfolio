@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>4TH QTR JavaScript Lesson 1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: #fdfdfd;
+    }
+    .section {
+      background-color: #f0f8ff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-left: 5px solid #00aaff;
+    }
+    button {
+      padding: 10px 15px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    #output {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #fffacd;
+      border: 2px solid #ffaa00;
+    }
+    .code-example {
+      background-color: #eee;
+      padding: 8px;
+      font-family: monospace;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>JavaScript Lesson 1: Basics, Features, and Examples</h1>
+
+<div class="section">
+  <h2>1. What is JavaScript?</h2>
+  <p>
+    JavaScript is a high-level, interpreted programming language used to make web pages interactive. 
+    It works alongside HTML and CSS to add dynamic behavior.
+  </p>
+</div>
+
+<div class="section">
+  <h2>2. Features of JavaScript</h2>
+  <ul>
+    <li>Lightweight, interpreted, event-based, cross-platform, client-side.</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>3. Characteristics of JavaScript</h2>
+  <ul>
+    <li>High-level, dynamically typed, prototype-based, first-class functions.</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>4. Advantages of JavaScript</h2>
+  <ul>
+    <li>Fast execution, reduces server load, rich interfaces, extensive community support, usable for backend (Node.js).</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>5. Disadvantages of JavaScript</h2>
+  <ul>
+    <li>Security risks, browser compatibility issues, limited system access, large scripts may slow pages.</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>6. JavaScript Examples</h2>
+  <p>This section demonstrates different JavaScript features in action.</p>
+
+  <!-- Variables -->
+  <button onclick="showVariables()">Show Variables</button>
+  <div id="variables-output" class="code-example">Click the button to see variables output.</div>
+
+  <!-- User Input and Condition -->
+  <button onclick="askAge()">Check Age</button>
+  <div id="age-output" class="code-example">Click the button to check your age.</div>
+
+  <!-- Loop Example -->
+  <button onclick="showLoop()">Show Loop Example</button>
+  <div id="loop-output" class="code-example">Click the button to see a loop.</div>
+
+  <script>
+    // 1. Variables and Data Types
+    function showVariables() {
+      let name = "Student"; // string
+      let age = 15;         // number
+      let isLearning = true; // boolean
+      document.getElementById("variables-output").innerText =
+        "Name: " + name + "\nAge: " + age + "\nLearning JS: " + isLearning;
+      console.log("Variables displayed:", name, age, isLearning);
+    }
+
+    // 2. Prompt Input and Conditional Statement
+    function askAge() {
+      let userAge = prompt("Enter your age:");
+      if(userAge >= 18) {
+        document.getElementById("age-output").innerText = 
+          "You are an adult.";
+      } else {
+        document.getElementById("age-output").innerText = 
+          "You are a minor.";
+      }
+      console.log("Age checked:", userAge);
+    }
+
+    // 3. Loop Example
+    function showLoop() {
+      let output = "";
+      for(let i=1; i<=5; i++) {
+        output += "Number " + i + "\n";
+      }
+      document.getElementById("loop-output").innerText = output;
+      console.log("Loop output:", output);
+    }
+
+    // 4. Alert Example
+    alert("Welcome to JavaScript Lesson 1 Interactive Page!");
+  </script>
+</div>
+
+</body>
+</html>
