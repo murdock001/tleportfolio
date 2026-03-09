@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ICT Lessons</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .section {
+      border-left: 4px solid #4CAF50;
+      padding: 10px;
+      margin-bottom: 20px;
+      background: #f9f9f9;
+    }
+    button {
+      margin-top: 10px;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+    #result1, #result2 {
+      padding: 10px;
+      border: 1px solid #ccc;
+      background: #fff;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>JavaScript Script Placement and Basics</h1>
+
+<div class="section">
+  <h2>1. Where can you place JavaScript?</h2>
+  <p><b>In the &lt;head&gt; section</b>: Scripts here run even before the page is visible.</p>
+  <p><b>In the &lt;body&gt; section</b>: Scripts here run as the elements load and can affect the page content.</p>
+  <p><b>External scripts</b>: These are stored in a separate .js file and linked using <code>src</code>. This makes code reusable.</p>
+</div>
+
+<div class="section">
+  <h2>2. Example: Script in the Head (Runs immediately)</h2>
+  <p>This text is shown below — the alert from head ran before page loaded.</p>
+</div>
+
+<div class="section">
+  <h2>3. Example: Script in Body (Runs as page loads)</h2>
+  <p>This button triggers a JavaScript function placed in the body:</p>
+  <button onclick="bodyScript()">Click Me!</button>
+  <div id="result1">Click above to see the result.</div>
+</div>
+
+<div class="section">
+  <h2>4. External Script Example</h2>
+  <p>External scripts help you keep code clean and reuse it across pages.</p>
+  <button onclick="externalScript()">Run External Script</button>
+  <div id="result2">External script result will appear here.</div>
+</div>
+
+<div class="section">
+  <h2>5. JavaScript Guidelines</h2>
+  <ul>
+    <li>Case sensitive — <code>myVar</code> and <code>myvar</code> are different.</li>
+    <li>White space is ignored within statements but helps readability.</li>
+    <li>Use comments to explain code:</li>
+  </ul>
+  <code>// This is a single line comment</code><br>
+  <code>/* This is a multi‑line comment */</code>
+</div>
+
+<script>
+// Script placed in the head can run immediately
+alert("This alert ran from the head section!");
+
+// Function defined here for body button
+function bodyScript() {
+  document.getElementById("result1").innerText =
+    "Hello! This was run from an inline script in the body!";
+}
+
+// Simulated external script function
+function externalScript() {
+  document.getElementById("result2").innerText =
+    "This simulates an external script being run!";
+}
+</script>
+
+</body>
+</html>
