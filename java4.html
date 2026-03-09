@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ICT Lessons</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    .section {
+      border-left: 5px solid #009688;
+      padding: 12px;
+      margin-bottom: 20px;
+      background: #e0f2f1;
+    }
+    button {
+      padding: 8px 12px;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+    .output {
+      padding: 10px;
+      border: 1px solid #ccc;
+      background: #fff;
+      margin-top: 6px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+
+<h1>JavaScript Events and Popup Boxes (Interactive Lesson)</h1>
+
+<div class="section">
+  <h2>1. What Are Events?</h2>
+  <p>
+    JavaScript events are actions that happen in the browser — like clicking a button, moving the mouse, typing a key, or submitting a form.  
+    We use events to trigger JavaScript functions. :contentReference[oaicite:1]{index=1}
+  </p>
+</div>
+
+<div class="section">
+  <h2>2. Mouse Events (onclick, ondblclick)</h2>
+  <button onclick="clickEvent()">Click Me!</button>
+  <button ondblclick="dblClickEvent()">Double Click Me!</button>
+  <div id="mouse-output" class="output">Interact with the buttons above.</div>
+</div>
+
+<div class="section">
+  <h2>3. Alert Popup Box</h2>
+  <p>
+    The alert box displays a message that the user must acknowledge (click OK).  
+    Useful for warnings or important information. :contentReference[oaicite:2]{index=2}
+  </p>
+  <button onclick="showAlert()">Show Alert Box</button>
+</div>
+
+<div class="section">
+  <h2>4. Prompt Popup Box</h2>
+  <p>
+    A prompt box asks the user for input.  
+    The user can enter text or click Cancel. :contentReference[oaicite:3]{index=3}
+  </p>
+  <button onclick="showPrompt()">Show Prompt Box</button>
+  <div id="prompt-output" class="output"></div>
+</div>
+
+<div class="section">
+  <h2>5. Confirm Popup Box</h2>
+  <p>
+    A confirm box asks the user to confirm or cancel something (OK / Cancel).  
+    It returns true if OK is clicked, false if Cancel is clicked. :contentReference[oaicite:4]{index=4}
+  </p>
+  <button onclick="showConfirm()">Show Confirm Box</button>
+  <div id="confirm-output" class="output"></div>
+</div>
+
+<div class="section">
+  <h2>6. Variables and Conditional Statements</h2>
+  <button onclick="checkAge()">Check Age Example</button>
+  <div id="cond-output" class="output"></div>
+</div>
+
+<script>
+  // 2. Mouse Event Functions
+  function clickEvent() {
+    document.getElementById("mouse-output").innerText =
+      "You clicked the button!";
+  }
+
+  function dblClickEvent() {
+    document.getElementById("mouse-output").innerText =
+      "You double‑clicked the button!";
+  }
+
+  // 3. Alert Box
+  function showAlert() {
+    alert("This is an alert box!");
+  }
+
+  // 4. Prompt Box
+  function showPrompt() {
+    let userName = prompt("Please enter your name:", "Type here...");
+    if (userName === null || userName.trim() === "") {
+      document.getElementById("prompt-output").innerText =
+        "You canceled or entered nothing!";
+    } else {
+      document.getElementById("prompt-output").innerText =
+        "Hello, " + userName + "!";
+    }
+  }
+
+  // 5. Confirm Box
+  function showConfirm() {
+    let choice = confirm("Do you want to continue?");
+    if (choice) {
+      document.getElementById("confirm-output").innerText =
+        "You chose YES (OK).";
+    } else {
+      document.getElementById("confirm-output").innerText =
+        "You chose NO (Cancel).";
+    }
+  }
+
+  // 6. Conditional Statement Example
+  function checkAge() {
+    let age = parseInt(prompt("Enter your age:"));
+    if (isNaN(age)) {
+      document.getElementById("cond-output").innerText =
+        "That’s not a valid number!";
+      return;
+    }
+    if (age >= 18) {
+      document.getElementById("cond-output").innerText =
+        "You are an adult!";
+    } else {
+      document.getElementById("cond-output").innerText =
+        "You are a minor!";
+    }
+  }
+</script>
+
+</body>
+</html>
