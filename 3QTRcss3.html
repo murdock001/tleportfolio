@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/* BOX MODEL STYLE */
+.box {
+  width: 250px;
+  background-color: lightyellow; /* Content background */
+
+  padding: 20px; /* Space between content and border */
+  border: 5px solid blue; /* Border around the box */
+  margin: 30px; /* Space outside the border */
+
+  line-height: 1.6;
+}
+
+/* PSEUDO CLASSES FOR LINKS */
+
+/* Unvisited link */
+a:link {
+  color: blue;
+}
+
+/* Visited link */
+a:visited {
+  color: purple;
+}
+
+/* When mouse is over link */
+a:hover {
+  color: red;
+}
+
+/* When link is clicked */
+a:active {
+  color: green;
+}
+
+/* Input focus */
+input:focus {
+  background-color: lightyellow;
+  border: 2px solid orange;
+}
+
+/* PSEUDO ELEMENTS */
+
+/* First letter styling */
+.first-letter:first-letter {
+  font-size: 200%;
+  color: darkblue;
+  font-weight: bold;
+}
+
+/* First line styling */
+.first-line:first-line {
+  color: darkgreen;
+  font-weight: bold;
+}
+
+/* Insert content before paragraph */
+.before-example:before {
+  content: "★ ";
+  color: red;
+}
+
+/* Insert content after paragraph */
+.after-example:after {
+  content: " ✔";
+  color: green;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>CSS Box Model and Pseudo Elements Example</h2>
+
+<h3>1. CSS Box Model</h3>
+<p>
+The CSS Box Model describes how elements are displayed on a webpage. 
+Each element contains <b>content, padding, border, and margin</b>.
+</p>
+
+<div class="box">
+This box demonstrates the CSS Box Model.<br><br>
+
+Content – The text inside the box.<br>
+Padding – Space between the content and the border.<br>
+Border – The blue line surrounding the box.<br>
+Margin – The space outside the border that separates it from other elements.
+</div>
+
+<h3>2. CSS Pseudo Classes</h3>
+<p>
+Pseudo classes style elements depending on their state.
+Try interacting with the elements below.
+</p>
+
+<a href="#">Hover or click this link</a>
+
+<br><br>
+
+<input type="text" placeholder="Click here to see :focus effect">
+
+<h3>3. CSS Pseudo Elements</h3>
+
+<p class="first-letter">
+This paragraph demonstrates the :first-letter pseudo element which changes the style of the first letter.
+</p>
+
+<p class="first-line">
+This paragraph demonstrates the :first-line pseudo element. Only the first line will appear styled differently from the rest of the text.
+</p>
+
+<p class="before-example">
+The :before pseudo element inserts content before the paragraph.
+</p>
+
+<p class="after-example">
+The :after pseudo element inserts content after the paragraph.
+</p>
+
+</body>
+</html>
